@@ -5,5 +5,5 @@ http.createServer(function ( request, response){
     var urlString = url.parse(request.url, true);
     var body = 'Hello ' + urlString.query.name;
     response.end(body);
-}).listen(3000, '0.0.0.0');
+}).listen(3000);
 console.log('running webserver');
